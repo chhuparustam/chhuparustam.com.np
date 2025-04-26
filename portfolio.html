@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #0f2027;
+            background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027); 
+            background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+            color: white;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-shift 3s infinite;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .progress-bar {
+            width: 80%;
+            margin: 20px auto;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-bar::before {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 100%;
+            background: #2193b0;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            position: absolute;
+            animation: progress 2s infinite;
+        }
+        @keyframes gradient-shift {
+            0% { background-position: 0%; }
+            100% { background-position: 100%; }
+        }
+        @keyframes progress {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Site Under Construction</h1>
+        <p>Buiilding something amazing. Stay tuned!</p>
+        <div class="progress-bar"></div>
+    </div>
+</body>
+</html>
